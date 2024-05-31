@@ -1,3 +1,4 @@
+import Header from "../Header";
 import Navbar from "../Navbar";
 
 const MainLayout =({children})=>{
@@ -5,7 +6,7 @@ const MainLayout =({children})=>{
      <>
        <div className="flex flex-col">
         <Navbar />
-
+       
         <main>
             {children}
         </main>

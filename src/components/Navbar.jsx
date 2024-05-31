@@ -4,15 +4,16 @@ import { faShoppingBag } from '@fortawesome/free-solid-svg-icons';
 const Navbar =()=>{
     return(
         <>
-          <section className="p-4 shadow-lg shadow-slate-200">
-            <nav className="flex flex-row-reverse justify-around items-center">
+          <section className="p-4  shadow-sm shadow-slate-200 sticky">
+            <nav className="flex  flex-row-reverse justify-around items-center">
                   
                 <section>
                     <img src={logo} alt="logo" />
                     </section>  
                
-                <ul>
-                    <li><a href="#"> محصولات </a></li>
+                <ul className='flex flex-row-reverse'>
+                    <li className='p-2'><a href="#">  صفحه ی اصلی </a></li>
+                    <li className='p-2'><a href="#"> محصولات </a></li>
                 </ul>
 
                 <section className='relative'>
