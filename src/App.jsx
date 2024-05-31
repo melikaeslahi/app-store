@@ -1,3 +1,6 @@
+import { Helmet } from "react-helmet"
+import MainLayout from "./components/layout/MainLayout"
+
  
 
 function App() {
@@ -5,7 +8,10 @@ function App() {
 
   return (
     <>
-       <h1 className='text-3xl font-bold underline'>cart shopinp</h1>
+        <MainLayout>
+          <Helmet>وبسایت فروشگاهی</Helmet>
+
+        </MainLayout>
     </>
   )
 }
