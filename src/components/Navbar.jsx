@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import logo from '../assets/react.svg';
 import { faShoppingBag } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 const Navbar =()=>{
     return(
         <>
@@ -12,8 +13,8 @@ const Navbar =()=>{
                     </section>  
                
                 <ul className='flex flex-row-reverse'>
-                    <li className='p-2'><a href="#">  صفحه ی اصلی </a></li>
-                    <li className='p-2'><a href="#"> محصولات </a></li>
+                    <li className='p-2'><Link to={'/'}>  صفحه ی اصلی </Link></li>
+                    <li className='p-2'><Link to="/products"> محصولات </Link></li>
                 </ul>
 
                 <section className='relative'>

@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet"
 import MainLayout from "./components/layout/MainLayout"
-import Home from "./components/Home"
+import Home from "./pages/Home"
+
 
  
 

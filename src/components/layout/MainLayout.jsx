@@ -7,7 +7,7 @@ const MainLayout =({children})=>{
        <div className="flex flex-col">
         <Navbar />
        
-        <main>
+        <main className="w-full">
             {children}
         </main>
 
