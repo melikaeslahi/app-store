@@ -8,7 +8,7 @@
             "image": "shoe1.png",
             "marketable_number":5,
             "sizes":[7 , 8 , 9 , 10],
-            "colors":[ "green" , "red" , "sky" ]
+            "colors":[ "green" , "red" , "blue" ]
         },
         {
             "id": "2",
@@ -18,7 +18,7 @@
             "image":"shoe2.png",
             "marketable_number":5,
             "sizes":[7 , 8 , 9 , 10],
-            "colors":[ "green" , "red" , "sky" ]
+            "colors":[ "green" , "red" , "blue" ]
 
         },
         {
@@ -29,7 +29,7 @@
             "image": "shoe3.png",
             "marketable_number":5,
             "sizes":[7 , 8 , 9 , 10],
-            "colors":[ "green" , "red" , "sky" ]
+            "colors":[ "green" , "red" , "blue" ]
 
         },
         {
@@ -40,7 +40,7 @@
             "image": "shoe4.png",
             "marketable_number":5,
             "sizes":[7 , 8 , 9 , 10],
-            "colors":[ "green" , "red" , "sky" ]
+            "colors":[ "green" , "red" , "blue" ]
 
         },
         {
@@ -51,7 +51,7 @@
             "image": "shoe5.png",
             "marketable_number":5,
             "sizes":[7 , 8 , 9 , 10],
-            "colors":[ "green" , "red" , "sky" ]
+            "colors":[ "green" , "red" , "blue" ]
              
         },
         {
@@ -62,7 +62,7 @@
             "image": "shoe6.png",
             "marketable_number":5,
             "sizes":[7 , 8 , 9 , 10],
-            "colors":[ "green" , "red" , "sky" ]
+            "colors":[ "green" , "red" , "blue" ]
 
         },
         {
@@ -73,7 +73,7 @@
             "image": "shoe7.png",
             "marketable_number":5,
             "sizes":[7 , 8 , 9 , 10],
-            "colors":[ "green" , "red" , "sky" ]
+            "colors":[ "green" , "red" , "blue" ]
 
         },
         {
@@ -84,7 +84,7 @@
             "image": "shoe1.png",
             "marketable_number":5,
             "sizes":[7 , 8 , 9 , 10],
-            "colors":[ "green" , "red" , "sky" ]
+            "colors":[ "green" , "red" , "blue" ]
 
         },
         {
@@ -95,7 +95,7 @@
             "image":"shoe2.png",
             "marketable_number":5,
             "sizes":[7 , 8 , 9 , 10],
-            "colors":[ "green" , "red" , "sky" ]
+            "colors":[ "green" , "red" , "blue" ]
 
         },
         {
@@ -106,7 +106,7 @@
             "image":  "shoe3.png",
             "marketable_number":5,
             "sizes":[7 , 8 , 9 , 10],
-            "colors":[ "green" , "red" , "sky" ]
+            "colors":[ "green" , "red" , "blue" ]
 
         },
         {
@@ -117,7 +117,7 @@
             "image": "shoe4.png",
             "marketable_number":5,
             "sizes":[7 , 8 , 9 , 10],
-            "colors":[ "green" , "red" , "sky" ]
+            "colors":[ "green" , "red" , "blue" ]
 
         },
         {
@@ -128,7 +128,7 @@
             "image": "shoe5.png",
             "marketable_number":5,
             "sizes":[7 , 8 , 9 , 10],
-            "colors":[ "green" , "red" , "sky" ]
+            "colors":[ "green" , "red" , "blue" ]
 
         },
         {
@@ -139,7 +139,7 @@
             "image": "shoe6.png",
             "marketable_number":5,
             "sizes":[7 , 8 , 9 , 10],
-            "colors":[ "green" , "red" , "sky" ]
+            "colors":[ "green" , "red" , "blue" ]
 
         },
         {
@@ -150,7 +150,7 @@
             "image": "shoe7.png",
             "marketable_number":5,
             "sizes":[7 , 8 , 9 , 10],
-            "colors":[ "green" , "red" , "sky" ]
+            "colors":[ "green" , "red" , "blue" ]
 
         },
         {
@@ -161,7 +161,7 @@
             "image": "shoe1.png",
             "marketable_number":5,
             "sizes":[7 , 8 , 9 , 10],
-            "colors":[ "green" , "red" , "sky" ]
+            "colors":[ "green" , "red" , "blue" ]
 
         }
          
