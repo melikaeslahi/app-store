@@ -4,6 +4,7 @@ import MainLayout from "../components/layout/MainLayout";
 import NotFound from "../components/NotFound";
 import Products from "../pages/Products";
 import Product from "../pages/Product";
+import Cart from "../pages/Cart";
 
 
 export const router = createBrowserRouter([
@@ -23,9 +24,9 @@ export const router = createBrowserRouter([
         path: '/products/:productId',
         element: (<MainLayout> <Product /> </MainLayout>)
     },
-    // {
-    //     path: '/cart', 
-    //     element: (<MainLayout> <CartTable></CartTable> </MainLayout>)
-    // }
+    {
+        path: '/cart', 
+        element: (<MainLayout> <Cart /> </MainLayout>)
+    }
 
 ]) 
