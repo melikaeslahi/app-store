@@ -9,7 +9,7 @@ import Product from "../pages/Product";
 export const router = createBrowserRouter([
     {
         path: '/',
-        element: <App />,
+        t: <elemenApp />,
         errorElement: <NotFound />,
 
 

@@ -5,6 +5,9 @@ import { useGetAllProductsQuery } from "../slice/ProductApi";
 const Products =() =>{
 
     const {data , isError , isLoading ,isSuccess}= useGetAllProductsQuery();
+     
+    
+
     return(
     <>
     <section className="flex flex-col items-center justify-center mt-5 ">
