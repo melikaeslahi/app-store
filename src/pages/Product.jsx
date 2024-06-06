@@ -1,15 +1,23 @@
 import { useState } from 'react';
 import shoe from '../assets/images/shoe5.png'
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { useGetProductQuery } from '../slice/ProductApi';
 import ProductForm from '../components/pages/product/ProductForm';
 import Sizes from '../components/pages/product/Sizes';
 import Colors from '../components/pages/product/Colors';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { addToCart } from '../slice/CartSlice';
 const Product = ()=>{
    const {productId}  = useParams();
    const {data:product , isFetching , isSuccess } = useGetProductQuery(productId);
-   const {color:selectedColor} =  useSelector(state =>state.product);
+   const {color , size , qty} = useSelector(state=>state.product);
+   const dispatch = useDispatch();
+   const navigate = useNavigate();
+   const handleAddToCart = (item) => {
+    dispatch(addToCart(item));
+    navigate("/cart");
+};
+
    let content;
     return(<>
     <section className='flex justify-center mt-10'>
@@ -24,7 +32,7 @@ const Product = ()=>{
          {/* details */}
          <section className="w-3/5 flex flex-col items-start justify-start p-10">  
                <h1 className='text-2xl font-bold '>{product.title}</h1>
-               <h3 className='text-gray-600 text-lg pb-4' > {selectedColor!== null ? selectedColor : "selected your color" }</h3>
+               <h3 className='text-gray-600 text-lg pb-4' > {color!== null ? color : "selected your color" }</h3>
                <section className='flex w-full justify-between items-center'>
                 <section>
                   <h3 className='text-gray-600 text-sm'>Price</h3>
@@ -46,7 +54,11 @@ const Product = ()=>{
                   </section>
 
                  <section className='w-3/4 flex justify-start'> 
-                   <button className='w-3/4  text-red-600 hover:text-white hover:bg-red-600 bg-white py-3 border border-red-600 rounded-lg' >Add To Cart</button>
+                   <button 
+                   className={`w-3/4 ${color !== null && size !==null ? 'text-red-600 hover:text-white hover:bg-red-600 bg-white border border-red-600' : 'hover:bg-yellow-400 hover:text-white bg-white text-yellow-400 border border-yellow-400' }  py-3  rounded-lg`} 
+                   disabled={color !==null && size !==null ? false : true } 
+                   onClick={()=>handleAddToCart({...product , cartQty:qty , cartColor:color , cartSize:size})}       
+                   >Add To Cart</button>
                  </section>
            
          </section>
