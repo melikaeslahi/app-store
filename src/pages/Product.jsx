@@ -5,10 +5,11 @@ import { useGetProductQuery } from '../slice/ProductApi';
 import ProductForm from '../components/pages/product/ProductForm';
 import Sizes from '../components/pages/product/Sizes';
 import Colors from '../components/pages/product/Colors';
+import { useSelector } from 'react-redux';
 const Product = ()=>{
    const {productId}  = useParams();
    const {data:product , isFetching , isSuccess } = useGetProductQuery(productId);
-   
+   const {color:selectedColor} =  useSelector(state =>state.product);
    let content;
     return(<>
     <section className='flex justify-center mt-10'>
@@ -23,7 +24,7 @@ const Product = ()=>{
          {/* details */}
          <section className="w-3/5 flex flex-col items-start justify-start p-10">  
                <h1 className='text-2xl font-bold '>{product.title}</h1>
-               <h3 className='text-gray-600 text-lg pb-4' >{product.colors[0]}</h3>
+               <h3 className='text-gray-600 text-lg pb-4' > {selectedColor!== null ? selectedColor : "selected your color" }</h3>
                <section className='flex w-full justify-between items-center'>
                 <section>
                   <h3 className='text-gray-600 text-sm'>Price</h3>

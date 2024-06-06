@@ -18,14 +18,15 @@ const Navbar =()=>{
                 </ul>
 
                 <section className='relative'>
-                    
+                    <Link to={`/cart`}>
                     <span>
                         <FontAwesomeIcon  className='text-xl font-bold cursor-pointer hover:text-red-600'  icon={faShoppingBag} />
                     </span>
                     <section className='absolute -top-3 -left-1'>
                         <span className='p-0.5 w-0.5 h-0.5 text-sm bg-red-600 text-white rounded-full'>0</span>
                     </section>
-                </section>
+                    </Link>
+                 </section>
 
             </nav>
           </section>

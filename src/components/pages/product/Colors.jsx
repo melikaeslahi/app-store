@@ -1,5 +1,11 @@
+import { useDispatch, useSelector } from "react-redux";
+import { setColor } from "../../../slice/ProductSlice";
+
 const Colors =({colors})=>{
- 
+ const dispatch = useDispatch();
+ const { color:selectedColor} = useSelector(state=>state.product);
+
+
 return(<>
     <section className='w-2/4'>
              <h3 className='text-gray-600 text-sm'> Selected Color </h3>
@@ -7,7 +13,11 @@ return(<>
                 {colors?.map((color ,index)=>
                     <span
                     key={index} 
-                    className={`w-5 h-5  bg-${color}-600 rounded-full ml-2 border border-gray-600 cursor-pointer`}></span>
+                    className={`w-5 h-5  ${selectedColor === color ? 'border border-spacing-3 border-red-600' : ''} bg-${color}-600 rounded-full ml-2 border border-gray-600 cursor-pointer`}
+                    onClick={()=>dispatch(setColor(color))}
+                    >
+
+                    </span>
                 )}
              </section>
              </section>
