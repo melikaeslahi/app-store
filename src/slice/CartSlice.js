@@ -16,7 +16,7 @@ const initialState = {
 
 }
 
-console.log(initialState);
+ 
 
 export const fetchAllCart = createAsyncThunk('/cart/fetchAllCart', async () => {
     try {
@@ -34,7 +34,6 @@ export const cartSlice = createSlice({
     initialState,
     reducers: {
         addToCart(state, action) {
-            console.log(action);
             //محصولی که کلیک شده روش برای اضافه شدن آیا ایندکس اش در کارت آیتم وجود دارد با خیر 
             const existingIndex = state.cartItems.findIndex(item => item.id === action.payload.id && item.color === action.payload.cartColor && item.size === action.payload.cartSize);
             if (existingIndex >= 0) {
@@ -75,9 +74,31 @@ export const cartSlice = createSlice({
             state.cartTotalQty = qty;
 
         },
+        removeFromCart(state, action) {
+            state.cartItems.map((cartItem) => {
+                if (cartItem.id === action.payload.id) {
+                    const nextCartItems = state.cartItems.filter(
+                        (item) => item.id !== cartItem.id
+                    );
+
+                    state.cartItems = nextCartItems;
+
+                    toast.error("محصول از سبد خرید حذف شد", {
+                        position: "bottom-left",
+                    });
+                }
+                localStorage.setItem(
+                    "cartItems",
+                    JSON.stringify(state.cartItems)
+                );
+                return state;
+            });
+        },
+     
+
     },
 
 })
 export default cartSlice.reducer;
 
-export const {addToCart , getTotal} =cartSlice.actions;
+export const {addToCart , getTotal ,removeFromCart} =cartSlice.actions;

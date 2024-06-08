@@ -12,8 +12,8 @@ const Sizes =({sizes})=>{
               {sizes?.map((size , index)=>(
                     <span 
                     key={index}
-                    className={`border mt-1 ${selectedSize === size  ? ' text-white bg-red-500' : '' }  border-red-600 p-2  cursor-pointer hover:text-white
-                               hover:bg-red-600 bg-white text-xs rounded-md ml-2 text-center`}
+                    className={`border mt-1 ${selectedSize === size  ? ' text-white bg-red-600' : '' }  border-red-600 p-2  cursor-pointer hover:text-white
+                               hover:bg-red-600  text-xs rounded-md ml-2 text-center`}
                     onClick={()=>dispatch(setSize(size))}         
                              >
                         {size}

@@ -11,6 +11,7 @@ const Product = ()=>{
    const {productId}  = useParams();
    const {data:product , isFetching , isSuccess } = useGetProductQuery(productId);
    const {color , size , qty} = useSelector(state=>state.product);
+   
    const dispatch = useDispatch();
    const navigate = useNavigate();
    const handleAddToCart = (item) => {
@@ -18,7 +19,7 @@ const Product = ()=>{
     navigate("/cart");
 };
 
-   let content;
+   
     return(<>
     <section className='flex justify-center mt-10'>
       {isFetching ? <p>data is loading</p> : isSuccess ?

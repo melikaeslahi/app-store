@@ -14,4 +14,4 @@ export const store = configureStore({
     middleware: getDefaultMiddleware=>getDefaultMiddleware().concat(productApi.middleware)
    
 });
-store.dispatch(getTotal());
+// store.dispatch(getTotal());
