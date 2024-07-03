@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Header from "../components/Header";
 import NotFound from "../components/NotFound";
 import ProductCard from "../components/ProductCard";
@@ -5,7 +6,12 @@ import { useGetAllProductsQuery } from "../slice/ProductApi";
 
 const Home = () =>{
   const {data , isError , isLoading ,isSuccess}=  useGetAllProductsQuery();
-  const newProducts = data.slice(0,2);
+  let newProducts; 
+  useEffect(()=>{
+    if (isSuccess) {
+       newProducts = data.slice(0,2);
+    }
+  }, [data , isSuccess])
     return(<>
      <section>
         <Header/>
