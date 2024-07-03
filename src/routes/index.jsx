@@ -9,11 +9,10 @@ import Cart from "../pages/Cart";
 
 export const router = createBrowserRouter([
     {
+        
         path: '/',
-        t: <elemenApp />,
-        errorElement: <NotFound />,
-
-
+        element: <App />,
+        errorElement: <NotFound />
     },
      {
         path: '/products',
