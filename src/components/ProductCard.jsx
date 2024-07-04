@@ -12,7 +12,7 @@ const ProductCard = ({product}) =>{
         <section  className="relative w-72 h-80 rounded-2xl bg-zinc-800">
             <section className="w-full w h-52 flex justify-center bg-red-600  rounded-t-2xl [clip-path:circle(88%_at_64%_-12%)]">
                
-               <img src={`http://localhost:9000/images/${image}`} alt={title} className='w-3/4 h-3/4' />
+               <img src={`https://app-store-api.vercel.app/images/${image}`} alt={title} className='w-3/4 h-3/4' />
 
             </section>
 

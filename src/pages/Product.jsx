@@ -26,7 +26,7 @@ const Product = ()=>{
        <section className=" container w-full flex items-center h-96">
       
           <section className=" w-2/5 bg-red-600 h-full rounded-lg flex justify-center items-center"> 
-            <img src={`http://localhost:9000/images/${product.image}`} alt="image" className='w-52 h-52 transform duration-500 ease-in-out hover:scale-105' />
+            <img src={`https://app-store-api.vercel.app/images/${product.image}`} alt="image" className='w-52 h-52 transform duration-500 ease-in-out hover:scale-105' />
            </section>
 
 

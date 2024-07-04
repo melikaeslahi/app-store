@@ -7,11 +7,11 @@ import { useGetAllProductsQuery } from "../slice/ProductApi";
 const Home = () =>{
   const {data , isError , isLoading ,isSuccess}=  useGetAllProductsQuery();
   let newProducts; 
-  useEffect(()=>{
+ 
     if (isSuccess) {
-       newProducts = data.slice(0,2);
+       newProducts = data.slice(-3);
     }
-  }, [data , isSuccess])
+    
     return(<>
      <section>
         <Header/>
