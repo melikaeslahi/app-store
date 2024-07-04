@@ -26,7 +26,7 @@ const CartTable =()=>{
                      <img width={500}
                        height={300}
                        className={'w-full cursor-pointer object-cover h-full   rounded-lg hover:object-fill  '}
-                       src={`http://localhost:9000/images/${cart.image}`}
+                       src={`https://app-store-api.vercel.app/images/${cart.image}`}
                        alt="image" />
                    </Link>
                            
