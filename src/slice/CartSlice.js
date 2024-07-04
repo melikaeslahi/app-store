@@ -3,7 +3,7 @@ import axios from "axios";
 import { json } from "react-router-dom";
 import { toast } from "react-toastify";
 
- console.log(localStorage);
+ 
  
 const initialState = {
     cartItems: localStorage.getItem('cartItems') ? JSON.parse(localStorage.getItem("cartItems")|| '{}')  : [],
