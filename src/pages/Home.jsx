@@ -22,7 +22,7 @@ const Home = () =>{
 
             <section className="p-5 container flex justify-center items-center">
             {isLoading ? <p>data is loading</p> : 
-            isSuccess ?  newProducts.map((product , index)=> <ProductCard product={product}  key={index}  />)  :
+            isSuccess ?  newProducts?.map((product , index)=> <ProductCard product={product}  key={index}  />)  :
             isError ? <NotFound /> : null}
             </section>
             
