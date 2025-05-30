@@ -35,11 +35,16 @@ Ideal for portfolio showcasing and learning core frontend concepts.
 
 ## 📁 Project Structure
 
- src/
+src/
+
 ├── components/ # Reusable UI components like ProductCard, Header, Cart
+
 ├── pages/ # Main pages (e.g. Store page)
+
 ├── assets/ # Static files like images
+
 ├── App.jsx # Root component
+
 └── main.jsx # Entry point
 
 
