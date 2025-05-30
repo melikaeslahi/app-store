@@ -22,11 +22,11 @@ const ProductCard = ({product}) =>{
                 </section>
                 <section className='flex justify-center items-center pt-2'>
                     <span className='text-white text-sm text-center '> SIZE:</span>
-                    {sizes?.map((size , index)=> <span className='w-4 h-4 bg-white text-xs rounded-md ml-2 text-center' key={index}>{size}</span>)}
+                    {sizes?.map((size , index)=> <span  className='w-4 h-4 bg-white text-xs rounded-md ml-2 text-center' key={index}>{size}</span>)}
                 </section>
                 <section className='flex justify-center items-center pt-2'>
                     <span className='text-white text-sm text-center '> COLOR:</span>
-                    {colors?.map((color , index)=><span className={`w-4 h-4 bg-${color}-600 rounded-full ml-2`}></span>
+                    {colors?.map((color , index)=><span key={index} className={`w-4 h-4  bg-${color}-600 rounded-full ml-2`}></span>
                      
                     )}
            

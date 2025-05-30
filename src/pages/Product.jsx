@@ -12,6 +12,7 @@ const Product = ()=>{
    const {data:product , isFetching , isSuccess } = useGetProductQuery(productId);
    const {color , size , qty} = useSelector(state=>state.product);
    
+  
    const dispatch = useDispatch();
    const navigate = useNavigate();
    const handleAddToCart = (item) => {
