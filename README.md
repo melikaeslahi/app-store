@@ -42,6 +42,7 @@ src/
 ├── App.jsx        # Root component
 └── main.jsx       # Entry point
 
+
 ## 📌 Development Notes
 
 State management with React hooks for cart functionality
