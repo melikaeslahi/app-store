@@ -30,7 +30,7 @@ cd app-store
 npm install
 npm run dev
 
-🛠 Technologies Used React
+##🛠 Technologies Used React
 
 - Vite
 
@@ -41,7 +41,7 @@ npm run dev
 - Vercel (deployment)
 
 
-📁 Project Structure
+##📁 Project Structure
 
 src/
 ├── components/    # Reusable UI components like ProductCard, Header, Cart
@@ -50,7 +50,7 @@ src/
 ├── App.jsx        # Root component
 └── main.jsx       # Entry point
 
-📌 Development Notes
+##📌 Development Notes
 
 State management with React hooks for cart functionality
 
@@ -58,7 +58,7 @@ Component-based design for maintainability
 
 Tailwind CSS utility classes for fast styling and responsiveness
 
-🚀 Future Enhancements
+##🚀 Future Enhancements
 
 - User Authentication
 
